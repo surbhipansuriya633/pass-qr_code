@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 function PasswordAccess() {
     const [password, setPassword] = useState("");
@@ -9,9 +10,21 @@ function PasswordAccess() {
 
     const handleSubmit = () => {
         if (password === correctPassword) {
-            setIsAuthenticated(true);
+            Swal.fire({
+                icon: 'success',
+                title: 'Access Granted 🎉',
+                text: 'You have successfully unlocked the Season Pass!',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                setIsAuthenticated(true);
+            });
         } else {
-            alert("❌ Incorrect password");
+            Swal.fire({
+                icon: 'error',
+                title: 'Incorrect Password ❌',
+                text: 'Please try again!',
+            });
         }
     };
 
