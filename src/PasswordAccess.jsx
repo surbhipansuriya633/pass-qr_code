@@ -33,12 +33,14 @@ function PasswordAccess() {
             {!isAuthenticated ? (
                 <>
                     <h3>🔒 Enter Password to View Season Pass</h3>
-                    <input
-                        type="password"
-                        placeholder="Enter password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
+                    <div className="col-lg-5 col-md-6 col-sm-7 col-8 mx-auto">
+                        <input
+                            type="password"
+                            placeholder="Enter password"
+                            value={password}
+                            className="form-control border-dark border-3"
+                            onChange={(e) => setPassword(e.target.value)}
+                        /></div>
                     <br />
                     <button onClick={handleSubmit} style={{ marginTop: 10 }}>
                         Submit
