@@ -13,7 +13,7 @@ function PasswordAccess() {
             Swal.fire({
                 icon: 'success',
                 title: 'Congratulations 🎉',
-                text: 'You have successfully unlocked the Season Pass!',
+                text: 'Your set for the event has been booked',
                 confirmButtonColor: '#3085d6',
                 confirmButtonText: 'OK'
             }).then(() => {
