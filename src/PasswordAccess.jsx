@@ -46,12 +46,16 @@ function PasswordAccess() {
                 </>
             ) : (
                 <>
-                    <h3>✅ Access Granted</h3>
-                    <img
-                        src={seasonPassImage}
-                        alt="Season Pass"
-                        style={{ maxWidth: "100%", marginTop: 20 }}
-                    />
+                    <div style={{ display: "flex", alignItems: 'center' }}>
+                        <div>
+                            <h3>Entry Pass to a Day of Patriotism & Pride!</h3>
+                            <img
+                                src={seasonPassImage}
+                                alt="Season Pass"
+                                style={{ maxWidth: "100%", marginTop: 20 }}
+                            />
+                        </div>
+                    </div>
                 </>
             )}
         </div>

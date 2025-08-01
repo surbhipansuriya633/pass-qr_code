@@ -26,7 +26,7 @@ function QRPage() {
 
         // Add heading text centered above the QR
         pdf.setFontSize(16);
-        pdf.text("Scan this QR code to get Season Pass", pageWidth / 2, y - 10, { align: "center" });
+        pdf.text("", pageWidth / 2, y - 10, { align: "center" });
 
         // Add image (QR)
         pdf.addImage(imgData, "PNG", x, y, imgWidth, imgHeight);
