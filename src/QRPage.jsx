@@ -2,13 +2,13 @@ import React from "react";
 import { QRCodeCanvas } from "qrcode.react";
 
 function QRPage() {
-    const qrData = window.location.origin + "/season-pass-access";
+    const qrUrl = "https://pass-qr-code.vercel.app/";
 
     return (
         <div style={{ textAlign: "center", padding: 30 }}>
             <h2>Scan QR to Access Season Pass</h2>
-            <QRCodeCanvas value={qrData} size={200} />
-            <p>Scan with your phone to access</p>
+            <QRCodeCanvas value={qrUrl} size={200} />
+            <p>Scan with your phone</p>
         </div>
     );
 }
