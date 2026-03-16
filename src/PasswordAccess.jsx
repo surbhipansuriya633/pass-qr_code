@@ -4,9 +4,10 @@ import Swal from "sweetalert2";
 function PasswordAccess() {
     const [password, setPassword] = useState("");
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const correctPassword = "pass2025";
+    const correctPassword = "2026geetacourse";
 
-    const seasonPassImage = require("./pass.jpg")
+    const seasonPassImage = require("./Pass Front_page-0001.jpg")
+    const seasonPassImageback = require("./Pass Back_page-0001.jpg")
 
     const handleSubmit = () => {
         if (password === correctPassword) {
@@ -54,6 +55,11 @@ function PasswordAccess() {
                             <img
                                 src={seasonPassImage}
                                 alt="Season Pass"
+                                style={{ maxWidth: "100%", marginTop: 20 }}
+                            />
+                            <img
+                                src={seasonPassImageback}
+                                alt="Season Pass back"
                                 style={{ maxWidth: "100%", marginTop: 20 }}
                             />
                         </div>
